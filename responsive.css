@@ -1,0 +1,64 @@
+/* Responsive CSS Style  */
+@media(max-width: 1280px) {
+    #judul-log, #judul-log>span {
+        font-size: 24px;
+    }
+
+    
+
+
+}
+
+@media(max-width: 480px) {
+
+    
+    .moviezone-card-text{
+      display: none;
+    }
+
+    
+
+    .card section b {
+        font-size: 8px;
+    }
+
+    .card {
+        width: 150px;
+    }
+    
+
+    .button-style {
+        padding-left: 2px;
+    }
+
+    .button-card {
+        display: none;
+}
+
+.card-icon{
+    color: #fff;
+    padding: 0px !important;
+    font-size: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-body{
+    top: 30px;
+}
+}
+
+@media(max-width: 360px) {
+    #judul-log, #judul-log>span {
+        font-size: 16px;
+    }
+
+
+
+    #icon-nav {
+        width: 0.5rem;
+        height: 0.5rem;
+        color: #fff;
+    }
+}
+    

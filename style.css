@@ -1,0 +1,296 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    overflow-x: hidden;
+    width: 100vw;
+    /* position: relative; */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 50px;
+}
+
+.carousel-banner {
+    margin-top: 50px;
+}
+
+.breadcrumb-style {
+    margin-top: 80px;
+}
+
+.breadcrumb-style .breadcrumb a  {
+    text-decoration: none;
+    color: #fff;
+}
+
+.signin {
+    padding: 48px 24px;
+    margin: 20px;
+    color: #000032;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.pb_41 {
+    padding-bottom: 41px;
+}
+
+.input_email {
+    border: 1.5px solid #000032;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B3B3B3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.or_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.mt_24 {
+    margin-top: 24px;
+}
+
+.btn_sosmed {
+    background: #F2F2F2;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn_signin {
+    background: #F6A973;
+    border-radius: 8px;
+    height: 51px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.btn_signup {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F6A973;
+    text-decoration: none;
+}
+
+.btn_signup:hover {
+    color: #333333;
+}
+
+.signin-btn {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f6a973;
+    text-decoration: none;
+}
+
+.btn-close-signin-modal {
+    position: relative;
+    left: 465px;
+    top: 10px;
+}
+
+.navbar-brand,
+.navbar-brand>span {
+    font-family: 'Open Sans', sans-serif;
+    color: #f6a973;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.nav_btn {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f6a973;
+    text-decoration: none;
+}
+
+
+/* CSS Card & Slider */
+
+
+
+    /* background-color: #0C0C0C !important; */
+   
+
+
+
+/* i{
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 20px;
+} */
+
+
+.card {
+    width: 250px;
+    background-color: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.card:hover{
+    transform: scaleX(1.4) scaleY(1.4);
+    z-index: 10;
+    -webkit-transform: scaleX(1.4) scaleY(1.4);
+    -moz-transform: scaleX(1.4) scaleY(1.4);
+    -ms-transform: scaleX(1.4) scaleY(1.4);
+    -o-transform: scaleX(1.4) scaleY(1.4);
+}
+
+.card-body{
+    display: none;
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #141414;
+    top: 80px;
+    width: 100%;
+}
+
+.card-icon{
+    color: #fff;
+    padding: 0px !important;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card:hover > .card-body{
+    display: block;
+    /* height: max-content !important; */
+}
+
+.button-card-nonton {
+        padding: 5px 12px;
+        border: none;
+        background-color: rgb(232, 162, 32);
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+}
+
+      
+.button-card-nonton:hover {
+        background-color: rgb(235, 177, 69);
+        cursor: pointer;
+}
+
+.button-card-rincian {
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(86, 81, 78, 0.826);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.button-card-rincian:hover {
+    color: rgb(232, 162, 32);
+    cursor: pointer;
+}
+      
+
+
+.carousel-control-prev{
+    display: none;
+}
+
+.carousel-control-next{
+    display: none;
+}
+
+.tab-change-btn{
+    border: none;
+    width: 30px !important;
+}
+
+
+.margin-right{
+    margin-right: 100px;
+}
+
+.moviezone-card-text{
+    font-size: 12px ;
+}
+
+
+.footer{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+ul{
+    list-style: none;
+    font-size: 15px ;
+    color: rgba(255, 255, 255, 0.367);
+    font-weight: 100;
+}
+
+
+
+.copy-right{
+    font-size: 15px;
+      font-weight: 200;
+      color: rgb(249, 14, 14);
+      margin-left: 28px;
+}
+
+

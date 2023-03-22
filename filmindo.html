@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama Korea</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <!-- Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #141414;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="judul-log">Movie<span style="color: #fff;">Zone</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="icon-nav"></span>
+                </button>   
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <a class="btn btn-link nav_btn" href="dramakorea.html">Drama Korea</a>
+
+                    <a class="btn btn-link nav_btn" href="anime.html">Film Anime</a>
+
+                    <a class="btn btn-link nav_btn" href="filmindo.html">Film Indonesia</a>
+
+                    <form class="d-flex" role="search" style="width: 40vw; margin-left: 0%;">
+                        <div class="input-group margin-left-10">
+                            <input type="text" class="form-control input-custom" placeholder="Search for anything"
+                                aria-label="Search for anything" aria-describedby="basic-addon2" style="height: 30px;"/>
+                            <span class="input-group-text btn-custom" id="basic-addon2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                                    <path
+                                        d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+                                </svg></span>
+                        </div>
+                    </form>
+
+                    <button class="btn btn-link signin-btn" data-bs-toggle="modal" data-bs-target="#signInModal" style="margin-left: 2%;">
+                        Sign In
+                    </button>
+
+                    <div class="theme-toggler" style="color: #fff; justify-content:flex-start; margin-left: 2%;">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-sun" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg></span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            </svg></span>
+                    </div>
+
+                </div>
+            </div>
+    </nav>
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="container breadcrumb-style">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">Film Indonesia</a></li>
+            </ol>
+        </nav>
+
+        <!-- Cards -->
+        <!-- Card  Film Korea -->
+        <div class="container mt-4">
+            <section class="d-flex justify-content-between margin-right margin-title">
+                <p class="text-white"> <b>Drama Korea</b> </p>
+                <div class="">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="position: relative; overflow: visible;">
+
+                    <div class="carousel-item active">
+                        <section class="d-flex">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166093881/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Running Man</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between button-style">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img srcset="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166099698/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>A
+                                                Romance of the Little Forest</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166094583/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Heavenly Idol</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166099782/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Delivery Man</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166098787/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mid
+                                                Night Museum</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165603236/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Dr.
+                                                Stranger</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165853311/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>TRUE
+                                                BEAUTY</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165967902/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Why
+                                                Her?</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166013885/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Again My Life</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165902134/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Doom
+                                                at Your Service</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165609562/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Hotel Del Luna</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165985888/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>My
+                                                Love from the Star</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165868000/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Taxi
+                                                Driver</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165883297/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Extra-ordinary You</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1145216235/v5/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>MY
+                                                SHY BOSS</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165994058/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Beauty Inside</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165878327/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Youth of May</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165819739/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Live
+                                                On</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Card Film Indonesia -->
+        <div class="container mt-4">
+            <section class="d-flex justify-content-between margin-right margin-title">
+                <p class="text-white"> <b>Film Indonesia</b> </p>
+                <div class="">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="position: relative; overflow: visible;">
+
+                    <div class="carousel-item active">
+                        <section class="d-flex">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165810017/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Rumput Tetangga</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165803246/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Dimsum Martabak</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756406/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Yowis Ben 2</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165764642/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Dignitate</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756405/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Dua
+                                                Garis Biru</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165798636/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Bodyguard Ugal-Ugalan</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165887908/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Dancing in the Rain</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165798435/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Security Ugal-Ugalan</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165887906/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Calon Bini</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165870964/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Kok
+                                                Putusin Gue</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165803199/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>After Met You</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756407/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Ghost Writer</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165938362/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Hongkong Kasarung</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165764681/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Twivortiare</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165773944/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Gift</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165633869/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Iqro
+                                                2: My Universe</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165798389/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Talak 3</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756409/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Lampor: Keranda Terbang</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Card Film Action -->
+        <div class="container mt-4">
+            <section class="d-flex justify-content-between margin-right margin-title">
+                <p class="text-white"> <b>Film Action</b> </p>
+                <div class="">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="position: relative; overflow: visible;">
+
+                    <div class="carousel-item active">
+                        <section class="d-flex">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165734304/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Whistleblower</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165288694/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Laundry Man</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164962136/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Rise
+                                                of the Legend</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164903371/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Cold
+                                                War 2</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164802398/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mr.
+                                                Six</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164266156/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Young Detective Dee</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164212516/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Bad
+                                                Guys Always Die</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164903349/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Cold
+                                                War</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164136773/v5/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Aroma City</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165734304/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Whistleblower</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164802398/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mr.
+                                                Six</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164777677/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Rest
+                                                on Your Shoulder</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164803044/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Finding Mr. Right 2</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164266150/v4/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Breakup Buddies</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164266149/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Best Plan is no Plan</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164109305/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Meeting Dr. Sun</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164044612/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Soul
+                                                Mate</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164274000/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>LOVE</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Card Film Anime -->
+        <div class="container mt-4">
+            <section class="d-flex justify-content-between margin-right margin-title">
+                <p class="text-white"> <b>Anime</b> </p>
+                <div class="">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner" style="position: relative; overflow: visible;">
+
+                    <div class="carousel-item active">
+                        <section class="d-flex">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166032009/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>My
+                                                Little Monster</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166021878/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Wolf
+                                                Girl and Black Prince</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166038473/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Jujutsu Kaisen</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166000075/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Fate/Zero</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166043825/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Sonny Boy</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165985156/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Detective Conan S30</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165986014/v-1/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Ruroni Kenshin</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1166038473/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Jujutsu Kaisen</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1164109305/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Meeting Dr. Sun</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165870964/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Kok
+                                                Putusin Gue</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165803199/v3/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>After Met You</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756407/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Ghost Writer</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="carousel-item">
+                        <section class="d-flex ">
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165938362/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Hongkong Kasarung</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165764681/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Twivortiare</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165773944/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
+                                                Gift</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165633869/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Iqro
+                                                2: My Universe</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165798389/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Talak 3</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="https://vuclipi-a.akamaihd.net/p/cloudinary/h_171,w_304,dpr_1.5,f_auto,c_thumb,q_auto:low/1165756409/v2/d-1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <section class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="bi bi-play-circle-fill card-icon"></i>
+                                            <i class="bi bi-plus-circle card-icon"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                                        </div>
+                                    </section>
+                                    <section class="d-flex align-items-center justify-content-between">
+                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
+                                            <b>Lampor: Keranda Terbang</b></p>
+                                    </section>
+                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="button-card">Nonton</button>
+                                        <button class="button-card">Rincian</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="btn-close btn-close-signin-modal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <div class="signin">
+                        <div class="pb_41">Sign in</div>
+                        <div class="input_email">
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Enter phone number or email address">
+                        </div>
+
+
+                        <div>
+                            <div class="form-check form-switch d-flex jsutify-content-center align-items-center mt_24">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" style="margin: 0;">
+                                <label class="form-check-label or_text" for="flexSwitchCheckDefault">Keep me signed
+                                    in</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <button type="button" class="btn btn-warning mt_24 btn_signin">Sign In</button>
+                            <button type="button" class="btn btn-link mt_24 btn_signup">Sign Up</button>
+                        </div>
+
+
+                        <div class="or_text mt_24" style="text-align: center;">or</div>
+
+                        <div class="d-flex flex-column mt_24" style="gap: 12px;">
+                            <button type="button" class="btn btn-light btn_sosmed"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-google" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                </svg> Continue with Google</button>
+                            <button type="button" class="btn btn-light btn_sosmed"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#1976D2"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg> Continue with Facebook</button>
+                            <button type="button" class="btn btn-light btn_sosmed"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                                    class="bi bi-apple" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                </svg> Continue with Apple</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- footer  -->
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul>
+                                <li>Audio and Subtitle</li>
+                                <li>Media Center</li>
+                                <li>Privacy</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li>Audio description</li>
+                                <li>Investor Relation</li>
+                                <li>Terms and Conditions</li>
+                                <li>Legal Notices</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li>Help Center</li>
+                                <li>Jobs</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li>Gift card</li>
+                                <li>Subscription</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="row">
+
+                        <div class="col">
+                            <p class="copy-right">@2023 MovieZone all right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- custom js script -->
+    <script src="script.js"></script>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
