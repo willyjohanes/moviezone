@@ -32,12 +32,12 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" style="background-color: #141414;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" id="judul-log">Movie<span style="color: #fff;">Zone</span></a>
+                <a class="navbar-brand" href="index.html" id="judul-log">Movie<span>Zone</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" id="icon-nav"></span>
-                </button>   
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -47,10 +47,11 @@
 
                     <a class="btn btn-link nav_btn" href="filmindo.html">Film Indonesia</a>
 
-                    <form class="d-flex" role="search" style="width: 40vw; margin-left: 0%;">
+                    <form class="d-flex search-nav" role="search">
                         <div class="input-group margin-left-10">
-                            <input type="text" class="form-control input-custom" placeholder="Search for anything"
-                                aria-label="Search for anything" aria-describedby="basic-addon2" style="height: 30px;"/>
+                            <input type="text" class="form-control input-custom search"
+                                placeholder="Search for anything" aria-label="Search for anything"
+                                aria-describedby="basic-addon2" />
                             <span class="input-group-text btn-custom" id="basic-addon2"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-search-heart" viewBox="0 0 16 16">
@@ -62,26 +63,21 @@
                         </div>
                     </form>
 
-                    <button class="btn btn-link signin-btn" data-bs-toggle="modal" data-bs-target="#signInModal" style="margin-left: 2%;">
+                    <button class="btn btn-link signin-btn" data-bs-toggle="modal" data-bs-target="#signInModal">
                         Sign In
                     </button>
 
-                    <div class="theme-toggler" style="color: #fff; justify-content:flex-start; margin-left: 2%;">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-sun" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                            </svg></span>
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-moon-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
-                            </svg></span>
-                    </div>
+
 
                 </div>
+
             </div>
-    </nav>
+        </nav>
+
+        <!-- Alert -->
+        <div class="alert alert-success" role="alert">
+            <marquee behavior="scroll" direction="left"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam sint ab adipisci sunt, sequi aliquid velit illo possimus deleniti.</p></marquee>
+        </div>
 
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb" class="container breadcrumb-style">
@@ -91,12 +87,13 @@
                 <li class="breadcrumb-item active" aria-current="page"><a href="#">Film Anime</a></li>
             </ol>
         </nav>
+        
 
         <!-- Cards -->
-        <!-- Card  Film Korea -->
+        <!-- Card  Anime Genre 1 -->
         <div class="container mt-4">
             <section class="d-flex justify-content-between margin-right margin-title">
-                <p class="text-white"> <b>Drama Korea</b> </p>
+                <p class="text-white"> <b>Anime Comedy</b> </p>
                 <div class="">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -127,14 +124,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Running Man</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Running Man</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between button-style">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -153,14 +150,16 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>A
-                                                Romance of the Little Forest</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>A Romance of the Little
+                                                Forest</b>
+                                        </p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -179,14 +178,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Heavenly Idol</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Heavenly Idol</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -205,14 +204,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Delivery Man</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Delivery Man</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -231,14 +230,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mid
-                                                Night Museum</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Mid Night Museum</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,14 +256,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Dr.
-                                                Stranger</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Dr. Stranger</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -289,14 +288,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>TRUE
-                                                BEAUTY</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>TRUE BEAUTY</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -315,14 +314,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Why
-                                                Her?</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Why Her?</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -341,14 +340,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Again My Life</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Again My Life</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -367,14 +366,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Doom
-                                                at Your Service</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Doom at Your Service</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -393,14 +392,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Hotel Del Luna</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Hotel Del Luna</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -419,14 +418,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>My
-                                                Love from the Star</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>My Love from the Star</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -451,14 +450,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Taxi
-                                                Driver</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Taxi Driver</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -477,14 +476,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Extra-ordinary You</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Extra-ordinary You</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -503,14 +502,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>MY
-                                                SHY BOSS</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>MY SHY BOSS</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -529,14 +528,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Beauty Inside</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Beauty Inside</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -555,14 +554,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Youth of May</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Youth of May</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -581,14 +580,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Live
-                                                On</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Live On</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -611,10 +610,10 @@
             </div>
         </div>
 
-        <!-- Card Film Indonesia -->
+        <!-- Card Anime Genre 2 -->
         <div class="container mt-4">
             <section class="d-flex justify-content-between margin-right margin-title">
-                <p class="text-white"> <b>Film Indonesia</b> </p>
+                <p class="text-white"> <b>Dunia Sihir</b> </p>
                 <div class="">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -645,14 +644,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Rumput Tetangga</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Rumput Tetangga</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -671,14 +670,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Dimsum Martabak</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Dimsum Martabak</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -697,14 +696,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Yowis Ben 2</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Yowis Ben 2</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -723,14 +722,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Dignitate</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Dignitate</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -749,14 +748,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Dua
-                                                Garis Biru</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Dua Garis Biru</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -775,14 +774,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Bodyguard Ugal-Ugalan</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Bodyguard Ugal-Ugalan</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -807,14 +806,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Dancing in the Rain</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Dancing in the Rain</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -833,14 +832,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Security Ugal-Ugalan</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Security Ugal-Ugalan</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -859,14 +858,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Calon Bini</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Calon Bini</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -885,14 +884,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Kok
-                                                Putusin Gue</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Kok Putusin Gue</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -911,14 +910,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>After Met You</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>After Met You</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -937,14 +936,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Ghost Writer</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Ghost Writer</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -969,14 +968,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Hongkong Kasarung</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Hongkong Kasarung</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -995,14 +994,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Twivortiare</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Twivortiare</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1021,14 +1020,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Gift</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Gift</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1047,14 +1046,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Iqro
-                                                2: My Universe</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Iqro 2: My Universe</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1073,14 +1072,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Talak 3</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Talak 3</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1099,14 +1098,15 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Lampor: Keranda Terbang</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Lampor: Keranda Terbang</b>
+                                        </p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1129,10 +1129,10 @@
             </div>
         </div>
 
-        <!-- Card Film Action -->
+        <!-- Card Anime Genre 3 -->
         <div class="container mt-4">
             <section class="d-flex justify-content-between margin-right margin-title">
-                <p class="text-white"> <b>Film Action</b> </p>
+                <p class="text-white"> <b>Love Story</b> </p>
                 <div class="">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -1163,14 +1163,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Whistleblower</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Whistleblower</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1189,14 +1189,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Laundry Man</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Laundry Man</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1215,14 +1215,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Rise
-                                                of the Legend</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Rise of the Legend</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1241,14 +1241,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Cold
-                                                War 2</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Cold War 2</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1267,14 +1267,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mr.
-                                                Six</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Mr. Six</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1293,14 +1293,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Young Detective Dee</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Young Detective Dee</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1325,14 +1325,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Bad
-                                                Guys Always Die</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Bad Guys Always Die</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1351,14 +1351,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Cold
-                                                War</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Cold War</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1377,14 +1377,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Aroma City</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Aroma City</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1403,14 +1403,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Whistleblower</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Whistleblower</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1429,14 +1429,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Mr.
-                                                Six</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Mr. Six</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1455,14 +1455,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Rest
-                                                on Your Shoulder</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Rest on Your Shoulder</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1487,14 +1487,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Finding Mr. Right 2</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Finding Mr. Right 2</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1513,14 +1513,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Breakup Buddies</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Breakup Buddies</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1539,14 +1539,15 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Best Plan is no Plan</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Best Plan is no Plan</b>
+                                        </p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1565,14 +1566,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Meeting Dr. Sun</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Meeting Dr. Sun</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1591,14 +1592,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Soul
-                                                Mate</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Soul Mate</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1617,14 +1618,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>LOVE</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>LOVE</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1647,10 +1648,10 @@
             </div>
         </div>
 
-        <!-- Card Film Anime -->
+        <!-- Card Anime Genre 4 -->
         <div class="container mt-4">
             <section class="d-flex justify-content-between margin-right margin-title">
-                <p class="text-white"> <b>Anime</b> </p>
+                <p class="text-white"> <b>Dongeng</b> </p>
                 <div class="">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -1681,14 +1682,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>My
-                                                Little Monster</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>My Little Monster</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1707,14 +1708,15 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Wolf
-                                                Girl and Black Prince</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Wolf Girl and Black Prince</b>
+                                        </p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1733,14 +1735,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Jujutsu Kaisen</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Jujutsu Kaisen</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1759,14 +1761,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Fate/Zero</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Fate/Zero</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1785,14 +1787,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Sonny Boy</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Sonny Boy</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1811,14 +1813,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Detective Conan S30</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Detective Conan S30</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1843,14 +1845,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Ruroni Kenshin</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Ruroni Kenshin</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1869,14 +1871,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Jujutsu Kaisen</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Jujutsu Kaisen</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1895,14 +1897,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Meeting Dr. Sun</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Meeting Dr. Sun</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1921,14 +1923,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Kok
-                                                Putusin Gue</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Kok Putusin Gue</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1947,14 +1949,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>After Met You</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>After Met You</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -1973,14 +1975,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Ghost Writer</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Ghost Writer</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2005,14 +2007,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Hongkong Kasarung</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Hongkong Kasarung</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2031,14 +2033,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Twivortiare</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Twivortiare</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2057,14 +2059,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>The
-                                                Gift</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>The Gift</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2083,14 +2085,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;"><b>Iqro
-                                                2: My Universe</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Iqro 2: My Universe</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2109,14 +2111,14 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Talak 3</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Talak 3</b></p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2135,14 +2137,15 @@
                                         </div>
                                     </section>
                                     <section class="d-flex align-items-center justify-content-between">
-                                        <p class="moviezone-card-text m-0" style="color:#fff; font-size: large;">
-                                            <b>Lampor: Keranda Terbang</b></p>
+                                        <p class="moviezone-card-text m-0 movie-title"><b>Lampor: Keranda Terbang</b>
+                                        </p>
                                     </section>
-                                    <p class="moviezone-card-text" style="color: #fff;">Lorem ipsum dolor sit amet
-                                        consectetur, adipisicing elit. Voluptate, fuga.</p>
+                                    <p class="moviezone-card-text movie-description">Lorem ipsum dolor sit amet
+                                        consectetur,
+                                        adipisicing elit. Voluptate, fuga.</p>
                                     <div class="d-flex justify-content-between">
-                                        <button class="button-card">Nonton</button>
-                                        <button class="button-card">Rincian</button>
+                                        <button class="button-card-nonton">Nonton</button>
+                                        <button class="button-card-rincian">Rincian</button>
                                     </div>
                                 </div>
                             </div>
@@ -2164,6 +2167,7 @@
                 </button>
             </div>
         </div>
+
 
 
         <!-- Modal -->

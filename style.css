@@ -20,12 +20,26 @@ body {
     height: 50px;
 }
 
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+form.search-nav {
+    width: 400px;
+}
+
+form.search-nav input.search {
+    font-size: 12px;
+    height: 30px;
+}
+
+
 .carousel-banner {
     margin-top: 50px;
 }
 
 .breadcrumb-style {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .breadcrumb-style .breadcrumb a  {
@@ -113,6 +127,8 @@ body {
     line-height: 19px;
     color: #f6a973;
     text-decoration: none;
+    margin-left: 15%;
+    margin-right: 2%;
 }
 
 .btn-close-signin-modal {
@@ -121,14 +137,30 @@ body {
     top: 10px;
 }
 
-.navbar-brand,
-.navbar-brand>span {
+.navbar-brand {
     font-family: 'Open Sans', sans-serif;
     color: #f6a973;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
+}
+
+.navbar-brand span {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.navbar-brand:hover{
+    color:salmon;
+}
+
+.navbar-brand span:hover{
+    color:lightgreen;
 }
 
 .nav_btn {
@@ -141,21 +173,23 @@ body {
     text-decoration: none;
 }
 
-
-/* CSS Card & Slider */
-
-
-
-    /* background-color: #0C0C0C !important; */
-   
-
-
-
-/* i{
-    font-size: 20px;
+.nav_btn:hover {
     color: #fff;
-    padding: 5px 20px;
-} */
+}
+
+.modal-content {
+    margin-top: 80px;
+}
+
+.alert.alert-success {
+    height: 50px;
+    margin-top: 60px;
+}
+
+marquee p {
+    font-size: 20px;
+    align-items: center;
+}
 
 
 .card {
@@ -174,6 +208,7 @@ body {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
 
 .card:hover{
     transform: scaleX(1.4) scaleY(1.4);
@@ -207,11 +242,11 @@ body {
 }
 
 .button-card-nonton {
-        padding: 5px 12px;
+        padding: 5px 18px;
         border: none;
         background-color: rgb(232, 162, 32);
         color: #fff;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
@@ -228,11 +263,11 @@ body {
 }
 
 .button-card-rincian {
-    padding: 5px 12px;
+    padding: 5px 18px;
     border: none;
     background-color: rgba(86, 81, 78, 0.826);
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -269,6 +304,15 @@ body {
 
 .moviezone-card-text{
     font-size: 12px ;
+}
+
+.movie-title {
+    color: #fff;
+}
+
+.movie-description {
+    color: #fff;
+    font-size: 11px;
 }
 
 
